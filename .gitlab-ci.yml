@@ -1,0 +1,15 @@
+---
+
+stages:
+  - build
+  - push
+
+Build latex:
+  stage: build
+  script:
+    - docker build --no-cache -t registry.robespierre.lan:80/latex .
+
+Push latex:
+  stage: push
+  script:
+    - docker push registry.robespierre.lan:80/latex
