@@ -12,4 +12,4 @@ Build latex:
 Push latex:
   stage: push
   script:
-    - docker push registry.robespierre.lan:80/latex
+    - docker push registry.robespierre.lan:5000/latex
